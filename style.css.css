@@ -1,0 +1,100 @@
+/* Diseño general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    color: #4b6cb7;
+    margin-top: 20px;
+}
+
+/* Estilo para el formulario de subida */
+form {
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #4b6cb7;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #3a529b;
+}
+
+/* Estilo de las tarjetas donde se muestran las obras */
+.item-card {
+    border: 2px solid #4b6cb7;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para el título de cada obra */
+.item-card h3 {
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la descripción de cada obra */
+.item-card p {
+    font-family: 'Arial', sans-serif;
+    color: #34495e;
+    font-size: 1rem;
+}
+
+/* Botones de acción (editar y eliminar) */
+.edit-btn, .delete-btn {
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #3a529b;
+}
+
+/* Estilo para la lista de obras */
+#contentList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
